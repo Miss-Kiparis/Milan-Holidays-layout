@@ -1,6 +1,6 @@
 # Milan-Holidays-layout
 
-Milan Holidays layout link:
+Milan Holidays layout link: https://miss-kiparis.github.io/Milan-Holidays-layout/
 
 Выполнены следующие технические требования к верстке:
 
