@@ -1,0 +1,183 @@
+.body_wrapper {
+  background-image: url("../pics/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: inherit;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header_wrapper {
+  margin-top: 46px;
+  display: flex;
+  justify-content: space-between;
+  width: 1028px;
+}
+
+.logo {
+  background-image: url("../pics/white_logo.png");
+  background-repeat: no-repeat;
+}
+.logo_link {
+  text-transform: uppercase;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo:hover {
+  background-image: url("../pics/orange_logo.png");
+  transition: 0.2s linear;
+}
+
+.logo_text {
+  margin-top: 4px;
+  padding-left: 61px;
+  display: inline-block;
+}
+
+.logo_text > h1,
+h2 {
+  margin: 0;
+}
+
+.logo_text > h1 {
+  font-size: 29px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.logo_text > h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.logo_text:hover {
+  color: #f26522;
+  transition: 0.2s linear;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contacts > a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.email:hover {
+  color: #f26522;
+  transition: 0.2s linear;
+}
+
+.tel:hover {
+  color: #f26522;
+  transition: 0.2s linear;
+}
+
+/* main section */
+
+.posts_container {
+  margin-top: 20px; /* change later  */
+  width: 1030px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-between;
+}
+
+.posts_link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.posts_link:hover {
+  color: #f26522;
+  transition: 0.2s linear;
+}
+
+.price_tag {
+  position: absolute;
+  bottom: -55px;
+  display: flex;
+  justify-content: space-between;
+  max-height: 55px;
+  width: 100%;
+  background: #f26522;
+  color: #fff;
+}
+
+.posts_link:hover .price_tag {
+  bottom: 0;
+  transition: 0.3s linear;
+}
+
+.img-box {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  overflow: hidden;
+  border: 10px solid #fff;
+  border-image: linear-gradient(#fff, #000);
+  border-image-slice: 1;
+}
+
+.img-box img {
+  transform: translateX(calc(-1 * (100% - 300px) / 2));
+}
+
+.start_amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 16px;
+}
+
+/* footer */
+
+footer > p {
+  margin-top: 49px;
+  text-align: center;
+  color: #fff;
+}
+
+.from {
+  text-transform: none;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.money {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.details {
+  align-self: flex-end;
+  margin-bottom: 8px;
+  padding-right: 16px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.details::after {
+  content: ">";
+  margin-left: 16px;
+}
